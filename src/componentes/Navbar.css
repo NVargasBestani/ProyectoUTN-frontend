@@ -15,7 +15,7 @@
 .navbar-main {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 15px 40px;
   border-bottom: 1px solid #e5e5e5;
@@ -37,29 +37,64 @@
   transform: scale(1.1);
 }
 
-.btn-salir-icono {
+.btn-icono {
   background: none;
   border: none;
-  font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
+  padding: 5px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  color: #111;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
 }
 
-.btn-salir-icono:hover {
-  color: #dc3545;
+.btn-icono:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.btn-carrito-wrapper {
+  position: relative;
 }
 
 .badge-carrito {
   position: absolute;
-  top: -5px;
-  right: -8px;
-  background-color: #dc3545;
+  top: -2px;
+  right: -4px;
+  background-color: #111;
   color: white;
   border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
   font-weight: bold;
+}
+
+.btn-salir-icono {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #111;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.btn-salir-icono:hover {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
 }

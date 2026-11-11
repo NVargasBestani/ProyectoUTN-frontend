@@ -1,0 +1,48 @@
+.seccion-marcas {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.titulo-marcas {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.grilla-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-marca {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 25px 15px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.tarjeta-marca:hover {
+  background: #111;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.tarjeta-marca h4 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.tarjeta-marca p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-style: italic;
+}

@@ -4,6 +4,7 @@ import Login from "./componentes/Login";
 import Producto from "./componentes/Producto";
 import HeroBanner from "./componentes/HeroBanner";
 import Carrito from "./componentes/Carrito";
+import Marcas from "./componentes/Marcas";
 import "./App.css";
 
 function App() {
@@ -110,6 +111,7 @@ function App() {
           <Login setToken={setToken} />
         ) : (
           <div>
+            <Marcas /> {/* <-- Sección de marcas */}
             <h2 className="titulo-seccion">Zapatillas e Indumentaria</h2>
             <div className="grilla-productos">
               {productos.map((producto) => (
