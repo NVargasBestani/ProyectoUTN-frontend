@@ -1,0 +1,81 @@
+.tarjeta-producto {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contenedor-imagen {
+  width: 100%;
+  height: 200px;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.imagen-producto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita que la zapatilla se estire o se deforme */
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-producto:hover .imagen-producto {
+  transform: scale(1.05); /* Efecto zoom suave al pasar el mouse */
+}
+
+.info-producto {
+  margin-bottom: 15px;
+}
+
+.titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #111;
+  margin: 5px 0;
+}
+
+.stock {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.btn-primario {
+  width: 100%;
+  background-color: #111; /* Color negro estilo Nike */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px; /* Botón redondeado */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primario:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.btn-primario:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
