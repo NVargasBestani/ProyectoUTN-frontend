@@ -1,0 +1,102 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.modal-carrito {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.btn-cerrar {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.carrito-vacio {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 40px;
+}
+
+.lista-items {
+  flex: 1;
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-carrito {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.total-contenedor {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.acciones-carrito {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-vaciar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 35%;
+}
+
+.btn-finalizar {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 65%;
+}
